@@ -1,0 +1,126 @@
+---
+title: "Practical Machine Learning"
+author: "Courtney Rowlands"
+date: "10/14/2019"
+output: 
+  html_document:
+    keep_md: yes
+pdf_document: default
+---
+
+<!-- rmarkdown v1 -->
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Practical Machine Learning - Peer Graded Assignment
+
+### Summary
+One thing that people regularly do is quantify how much of a particular activity they do, but they rarely quantify how well they do it. In this project, your goal will be to use data from accelerometers on the belt, forearm, arm, and dumbell of 6 participants.
+
+The goal of you project is to predict the manner in which they did the exercise. This is the "classe" variable in the training set. You may use any of the other variables to predict with. You should create a report describing how you built your model, how you used cross validation, what you think the expected out of sample error is, and why you made the choices you did. You will also use your prediction model to predict 20 different test cases.
+
+```{r libraries,echo=FALSE}
+library(caret)
+library(randomForest)
+library(rpart)
+library(rpart.plot)
+```
+
+```{r download,echo=FALSE}
+# Check if the dataset exists. If it doesn't, then download.
+if (!file.exists("data")) {
+  dir.create("data")
+}
+
+fileUrlTraining <- "https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv" ##trainingdata
+fileUrlTest <- "https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv" ##testdata
+download.file(fileUrlTraining,destfile="./data/pml-training.csv")
+download.file(fileUrlTest,destfile="./data/pml-testing.csv")
+
+dataTraining <- read.csv("data/pml-training.csv",sep=",",header=TRUE,
+                         na.strings=c("NA","#DIV/0!",""))
+
+dataTesting <- read.csv("data/pml-testing.csv",sep=",",header=TRUE,
+                        na.strings=c("NA","#DIV/0!",""))
+
+```
+ 
+```{r dataAnalysis,echo=FALSE}
+dim(dataTraining)
+dim(dataTesting)
+
+str(dataTraining$classe)
+summary(dataTraining$classe)
+
+```
+```{r preprocessing}
+inTrain <- createDataPartition(y=dataTraining$classe,p=0.6,list=FALSE)
+myTrain <- dataTraining[inTrain, ]
+myTest <- dataTraining[-inTrain, ]
+
+dim(myTrain)
+
+## Remove variables that are most NAs.
+myTrainClean <- myTrain
+for (i in 1:length(myTrain)) {
+  if (sum(is.na(myTrain[ , i])) / nrow(myTrain) >= .75) {
+    for (j in 1:length(myTrainClean)) {
+      if (length(grep(names(myTrain[i]), names(myTrainClean)[j]))==1) {
+        myTrainClean <- myTrainClean[ , -j]
+      }
+    }
+  }
+}
+
+dim(myTrainClean)
+
+## Remove unneccessary columns
+myTrainingNew <- myTrainClean[,8:length(myTrainClean)]
+
+## Remove near zero variables
+nearZero <- nearZeroVar(myTrainingNew,saveMetrics=TRUE)
+nearZero
+```
+### Random Decision Forest
+```{r randomForest}
+
+## Random Forest
+set.seed(123)
+modelFit <- randomForest(classe~.,data=myTrainingNew)
+print(modelFit)
+```
+```{r crossValidation}
+## Cross Validation
+testPrediction <- predict(modelFit,dataTesting,type="class")
+
+trainingResults <- predict(modelFit,myTrainingNew)
+trainingAccuracy <- sum(trainingResults==myTrainingNew$classe)/length(trainingResults)
+paste("Accuracy on training set =",trainingAccuracy)
+
+validationResults <- predict(modelFit, newdata=myTest)
+validationAccuracy <- sum(validationResults==myTest$classe)/length(validationResults)
+paste("Accuracy on validation set =",validationAccuracy)
+
+testResults <- predict(modelFit,newdata=dataTesting)
+print("Classifications on the test set:");testResults
+```
+```{r dataVisualization}
+heat.tree <- function(tree, low.is.green = FALSE, ...) 
+  { 
+    # dots args passed to prp
+    y <- tree$frame$yval
+    if(low.is.green)
+      y <- -y
+    max <- max(y)
+    min <- min(y)
+    cols <- rainbow(99, end = .36)[
+            ifelse(y > y[1], (y-y[1]) * (99-50) / (max-y[1]) + 50,
+                  (y-min) * (50-1) / (y[1]-min) + 1)]
+    prp(tree, branch.col = cols, box.col = cols, ...)
+  }
+
+treeModel <- rpart(classe ~ ., data=myTrainingNew,method="anova")
+heat.tree(treeModel,type=2,varlen=2,fallen.leaves=TRUE)
+```
