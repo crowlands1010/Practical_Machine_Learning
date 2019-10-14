@@ -25,10 +25,6 @@ The goal of you project is to predict the manner in which they did the exercise.
 ```
 
 ```
-## Loading required package: ggplot2
-```
-
-```
 ## randomForest 4.6-14
 ```
 
@@ -110,58 +106,58 @@ nearZero
 
 ```
 ##                      freqRatio percentUnique zeroVar   nzv
-## roll_belt             1.071298    8.67017663   FALSE FALSE
-## pitch_belt            1.026549   13.87567935   FALSE FALSE
-## yaw_belt              1.052632   14.41915761   FALSE FALSE
-## total_accel_belt      1.059689    0.23777174   FALSE FALSE
-## gyros_belt_x          1.072591    1.06997283   FALSE FALSE
-## gyros_belt_y          1.157659    0.55197011   FALSE FALSE
-## gyros_belt_z          1.098113    1.35869565   FALSE FALSE
-## accel_belt_x          1.004184    1.33322011   FALSE FALSE
-## accel_belt_y          1.163842    1.12092391   FALSE FALSE
-## accel_belt_z          1.077213    2.43716033   FALSE FALSE
-## magnet_belt_x         1.046512    2.45414402   FALSE FALSE
-## magnet_belt_y         1.078481    2.36922554   FALSE FALSE
-## magnet_belt_z         1.047101    3.63451087   FALSE FALSE
-## roll_arm             44.340426   19.42085598   FALSE FALSE
-## pitch_arm            83.400000   22.40149457   FALSE FALSE
-## yaw_arm              32.061538   21.34001359   FALSE FALSE
-## total_accel_arm       1.047882    0.55197011   FALSE FALSE
-## gyros_arm_x           1.155477    5.31589674   FALSE FALSE
-## gyros_arm_y           1.442675    3.10801630   FALSE FALSE
-## gyros_arm_z           1.204545    1.91915761   FALSE FALSE
-## accel_arm_x           1.019231    6.40285326   FALSE FALSE
-## accel_arm_y           1.227642    4.41576087   FALSE FALSE
-## accel_arm_z           1.115385    6.36888587   FALSE FALSE
-## magnet_arm_x          1.060000   11.09035326   FALSE FALSE
-## magnet_arm_y          1.094340    7.23505435   FALSE FALSE
-## magnet_arm_z          1.093750   10.59782609   FALSE FALSE
-## roll_dumbbell         1.000000   87.40658967   FALSE FALSE
-## pitch_dumbbell        2.233766   85.54687500   FALSE FALSE
-## yaw_dumbbell          1.026667   86.99898098   FALSE FALSE
-## total_accel_dumbbell  1.034524    0.35665761   FALSE FALSE
-## gyros_dumbbell_x      1.032967    1.92764946   FALSE FALSE
-## gyros_dumbbell_y      1.273239    2.20788043   FALSE FALSE
-## gyros_dumbbell_z      1.045333    1.68987772   FALSE FALSE
-## accel_dumbbell_x      1.041667    3.43919837   FALSE FALSE
-## accel_dumbbell_y      1.051282    3.83831522   FALSE FALSE
-## accel_dumbbell_z      1.244604    3.38824728   FALSE FALSE
-## magnet_dumbbell_x     1.018182    8.91644022   FALSE FALSE
-## magnet_dumbbell_y     1.142857    6.94633152   FALSE FALSE
-## magnet_dumbbell_z     1.071429    5.55366848   FALSE FALSE
-## roll_forearm         11.974359   14.80129076   FALSE FALSE
-## pitch_forearm        61.394737   21.10224185   FALSE FALSE
-## yaw_forearm          15.657718   14.13043478   FALSE FALSE
-## total_accel_forearm   1.135318    0.56895380   FALSE FALSE
-## gyros_forearm_x       1.000000    2.36073370   FALSE FALSE
-## gyros_forearm_y       1.073394    6.01222826   FALSE FALSE
-## gyros_forearm_z       1.116838    2.42017663   FALSE FALSE
-## accel_forearm_x       1.166667    6.49626359   FALSE FALSE
-## accel_forearm_y       1.116667    8.20312500   FALSE FALSE
-## accel_forearm_z       1.136842    4.69599185   FALSE FALSE
-## magnet_forearm_x      1.122449   11.95652174   FALSE FALSE
-## magnet_forearm_y      1.319149   15.20040761   FALSE FALSE
-## magnet_forearm_z      1.108108   13.34069293   FALSE FALSE
+## roll_belt             1.051188    8.59375000   FALSE FALSE
+## pitch_belt            1.071429   13.65489130   FALSE FALSE
+## yaw_belt              1.064103   14.42764946   FALSE FALSE
+## total_accel_belt      1.062168    0.24626359   FALSE FALSE
+## gyros_belt_x          1.088089    1.01902174   FALSE FALSE
+## gyros_belt_y          1.134269    0.54347826   FALSE FALSE
+## gyros_belt_z          1.109405    1.34171196   FALSE FALSE
+## accel_belt_x          1.000000    1.34171196   FALSE FALSE
+## accel_belt_y          1.129670    1.17187500   FALSE FALSE
+## accel_belt_z          1.073446    2.43716033   FALSE FALSE
+## magnet_belt_x         1.023364    2.46263587   FALSE FALSE
+## magnet_belt_y         1.020305    2.36073370   FALSE FALSE
+## magnet_belt_z         1.062500    3.61752717   FALSE FALSE
+## roll_arm             49.341463   19.59069293   FALSE FALSE
+## pitch_arm            74.962963   22.44395380   FALSE FALSE
+## yaw_arm              32.629032   21.62024457   FALSE FALSE
+## total_accel_arm       1.009363    0.55197011   FALSE FALSE
+## gyros_arm_x           1.068852    5.29891304   FALSE FALSE
+## gyros_arm_y           1.445483    3.11650815   FALSE FALSE
+## gyros_arm_z           1.141956    1.97860054   FALSE FALSE
+## accel_arm_x           1.090000    6.41983696   FALSE FALSE
+## accel_arm_y           1.100000    4.40726902   FALSE FALSE
+## accel_arm_z           1.162500    6.40285326   FALSE FALSE
+## magnet_arm_x          1.051724   11.08186141   FALSE FALSE
+## magnet_arm_y          1.107143    7.17561141   FALSE FALSE
+## magnet_arm_z          1.126984   10.54687500   FALSE FALSE
+## roll_dumbbell         1.267606   87.36413043   FALSE FALSE
+## pitch_dumbbell        2.144444   84.90149457   FALSE FALSE
+## yaw_dumbbell          1.267606   86.76120924   FALSE FALSE
+## total_accel_dumbbell  1.072639    0.36514946   FALSE FALSE
+## gyros_dumbbell_x      1.030220    1.94463315   FALSE FALSE
+## gyros_dumbbell_y      1.337209    2.26732337   FALSE FALSE
+## gyros_dumbbell_z      1.043478    1.59646739   FALSE FALSE
+## accel_dumbbell_x      1.025000    3.38824728   FALSE FALSE
+## accel_dumbbell_y      1.006579    3.82982337   FALSE FALSE
+## accel_dumbbell_z      1.300752    3.37975543   FALSE FALSE
+## magnet_dumbbell_x     1.047170    8.79755435   FALSE FALSE
+## magnet_dumbbell_y     1.209091    6.87839674   FALSE FALSE
+## magnet_dumbbell_z     1.233010    5.59612772   FALSE FALSE
+## roll_forearm         11.829146   14.74184783   FALSE FALSE
+## pitch_forearm        53.454545   20.99184783   FALSE FALSE
+## yaw_forearm          16.680851   14.02853261   FALSE FALSE
+## total_accel_forearm   1.187671    0.57744565   FALSE FALSE
+## gyros_forearm_x       1.111821    2.38620924   FALSE FALSE
+## gyros_forearm_y       1.093023    6.09714674   FALSE FALSE
+## gyros_forearm_z       1.059016    2.47112772   FALSE FALSE
+## accel_forearm_x       1.169492    6.60665761   FALSE FALSE
+## accel_forearm_y       1.216667    8.21161685   FALSE FALSE
+## accel_forearm_z       1.086957    4.61956522   FALSE FALSE
+## magnet_forearm_x      1.040816   12.04144022   FALSE FALSE
+## magnet_forearm_y      1.185185   15.27683424   FALSE FALSE
+## magnet_forearm_z      1.000000   13.34918478   FALSE FALSE
 ## classe                1.469065    0.04245924   FALSE FALSE
 ```
 ### Random Decision Forest
@@ -181,53 +177,23 @@ print(modelFit)
 ##                      Number of trees: 500
 ## No. of variables tried at each split: 7
 ## 
-##         OOB estimate of  error rate: 0.65%
+##         OOB estimate of  error rate: 0.74%
 ## Confusion matrix:
 ##      A    B    C    D    E  class.error
-## A 3345    2    0    0    1 0.0008960573
-## B   14 2259    6    0    0 0.0087757789
-## C    0   13 2039    2    0 0.0073028238
-## D    0    0   24 1903    3 0.0139896373
-## E    0    0    3    9 2153 0.0055427252
+## A 3345    3    0    0    0 0.0008960573
+## B   18 2256    5    0    0 0.0100921457
+## C    0   15 2034    5    0 0.0097370983
+## D    0    0   28 1900    2 0.0155440415
+## E    0    0    2    9 2154 0.0050808314
 ```
 
 ```r
-## Cross Validation
-testPrediction <- predict(modelFit,dataTesting,type="class")
-
-trainingResults <- predict(modelFit,myTrainingNew)
-trainingAccuracy <- sum(trainingResults==myTrainingNew$classe)/length(trainingResults)
-paste("Accuracy on training set =",trainingAccuracy)
+dataModel <- rpart(classe ~ .,data=myTrainingNew,method="class")
+## dataPrediction <- predict(dataModel,myTest,type="class")
+rpart.plot(dataModel,main="Figure 1: Classification",extra=100,under=TRUE,faclen=0)
 ```
 
-```
-## [1] "Accuracy on training set = 1"
-```
-
-```r
-validationResults <- predict(modelFit, newdata=myTest)
-validationAccuracy <- sum(validationResults==myTest$classe)/length(validationResults)
-paste("Accuracy on validation set =",validationAccuracy)
-```
-
-```
-## [1] "Accuracy on validation set = 0.992352791231201"
-```
-
-```r
-testResults <- predict(modelFit,newdata=dataTesting)
-print("Classifications on the test set:");testResults
-```
-
-```
-## [1] "Classifications on the test set:"
-```
-
-```
-##  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 
-##  B  A  B  A  A  E  D  B  A  A  B  C  B  A  E  E  A  B  B  B 
-## Levels: A B C D E
-```
+![plot of chunk dataVisualization](figure/dataVisualization-1.png)
 
 ```r
 heat.tree <- function(tree, low.is.green = FALSE, ...) 
@@ -245,7 +211,11 @@ heat.tree <- function(tree, low.is.green = FALSE, ...)
   }
 
 treeModel <- rpart(classe ~ ., data=myTrainingNew,method="anova")
-heat.tree(treeModel,type=2,varlen=2,fallen.leaves=TRUE)
+heat.tree(main="Figure 2: Heat Tree" ,treeModel,type=2,varlen=2,fallen.leaves=TRUE)
 ```
 
-![plot of chunk dataVisualization](figure/dataVisualization-1.png)
+![plot of chunk dataVisualization](figure/dataVisualization-2.png)
+
+```r
+## Cross Validation
+```
