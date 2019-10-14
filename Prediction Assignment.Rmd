@@ -27,6 +27,7 @@ library(caret)
 library(randomForest)
 library(rpart)
 library(rpart.plot)
+library(e1071)
 ```
 
 ```{r download,echo=FALSE}
@@ -114,5 +115,12 @@ treeModel <- rpart(classe ~ ., data=myTrainingNew,method="anova")
 heat.tree(main="Figure 2: Heat Tree" ,treeModel,type=2,varlen=2,fallen.leaves=TRUE)
 
 ## Cross Validation
+# Prediction 1
+testPrediction <- predict(modelFit,myTest,type="class")
+confusionMatrix(testPrediction,myTest$classe)
 
+# Prediction 2
+modelFit2 <- randomForest(classe ~. ,data=myTrainingNew,method="class")
+testPrediction2 <- predict(dataModel,myTest,type="class")
+confusionMatrix(testPrediction2,myTest$classe)
 ```

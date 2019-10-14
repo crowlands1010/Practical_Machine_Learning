@@ -106,58 +106,58 @@ nearZero
 
 ```
 ##                      freqRatio percentUnique zeroVar   nzv
-## roll_belt             1.051188    8.59375000   FALSE FALSE
-## pitch_belt            1.071429   13.65489130   FALSE FALSE
-## yaw_belt              1.064103   14.42764946   FALSE FALSE
-## total_accel_belt      1.062168    0.24626359   FALSE FALSE
-## gyros_belt_x          1.088089    1.01902174   FALSE FALSE
-## gyros_belt_y          1.134269    0.54347826   FALSE FALSE
-## gyros_belt_z          1.109405    1.34171196   FALSE FALSE
-## accel_belt_x          1.000000    1.34171196   FALSE FALSE
-## accel_belt_y          1.129670    1.17187500   FALSE FALSE
-## accel_belt_z          1.073446    2.43716033   FALSE FALSE
-## magnet_belt_x         1.023364    2.46263587   FALSE FALSE
-## magnet_belt_y         1.020305    2.36073370   FALSE FALSE
-## magnet_belt_z         1.062500    3.61752717   FALSE FALSE
-## roll_arm             49.341463   19.59069293   FALSE FALSE
-## pitch_arm            74.962963   22.44395380   FALSE FALSE
-## yaw_arm              32.629032   21.62024457   FALSE FALSE
-## total_accel_arm       1.009363    0.55197011   FALSE FALSE
-## gyros_arm_x           1.068852    5.29891304   FALSE FALSE
-## gyros_arm_y           1.445483    3.11650815   FALSE FALSE
-## gyros_arm_z           1.141956    1.97860054   FALSE FALSE
-## accel_arm_x           1.090000    6.41983696   FALSE FALSE
-## accel_arm_y           1.100000    4.40726902   FALSE FALSE
-## accel_arm_z           1.162500    6.40285326   FALSE FALSE
-## magnet_arm_x          1.051724   11.08186141   FALSE FALSE
-## magnet_arm_y          1.107143    7.17561141   FALSE FALSE
-## magnet_arm_z          1.126984   10.54687500   FALSE FALSE
-## roll_dumbbell         1.267606   87.36413043   FALSE FALSE
-## pitch_dumbbell        2.144444   84.90149457   FALSE FALSE
-## yaw_dumbbell          1.267606   86.76120924   FALSE FALSE
-## total_accel_dumbbell  1.072639    0.36514946   FALSE FALSE
-## gyros_dumbbell_x      1.030220    1.94463315   FALSE FALSE
-## gyros_dumbbell_y      1.337209    2.26732337   FALSE FALSE
-## gyros_dumbbell_z      1.043478    1.59646739   FALSE FALSE
-## accel_dumbbell_x      1.025000    3.38824728   FALSE FALSE
-## accel_dumbbell_y      1.006579    3.82982337   FALSE FALSE
-## accel_dumbbell_z      1.300752    3.37975543   FALSE FALSE
-## magnet_dumbbell_x     1.047170    8.79755435   FALSE FALSE
-## magnet_dumbbell_y     1.209091    6.87839674   FALSE FALSE
-## magnet_dumbbell_z     1.233010    5.59612772   FALSE FALSE
-## roll_forearm         11.829146   14.74184783   FALSE FALSE
-## pitch_forearm        53.454545   20.99184783   FALSE FALSE
-## yaw_forearm          16.680851   14.02853261   FALSE FALSE
-## total_accel_forearm   1.187671    0.57744565   FALSE FALSE
-## gyros_forearm_x       1.111821    2.38620924   FALSE FALSE
-## gyros_forearm_y       1.093023    6.09714674   FALSE FALSE
-## gyros_forearm_z       1.059016    2.47112772   FALSE FALSE
-## accel_forearm_x       1.169492    6.60665761   FALSE FALSE
-## accel_forearm_y       1.216667    8.21161685   FALSE FALSE
-## accel_forearm_z       1.086957    4.61956522   FALSE FALSE
-## magnet_forearm_x      1.040816   12.04144022   FALSE FALSE
-## magnet_forearm_y      1.185185   15.27683424   FALSE FALSE
-## magnet_forearm_z      1.000000   13.34918478   FALSE FALSE
+## roll_belt             1.064286    8.55978261   FALSE FALSE
+## pitch_belt            1.106195   13.68885870   FALSE FALSE
+## yaw_belt              1.041009   14.30027174   FALSE FALSE
+## total_accel_belt      1.109937    0.23777174   FALSE FALSE
+## gyros_belt_x          1.072115    1.04449728   FALSE FALSE
+## gyros_belt_y          1.180498    0.53498641   FALSE FALSE
+## gyros_belt_z          1.047486    1.39266304   FALSE FALSE
+## accel_belt_x          1.074786    1.29925272   FALSE FALSE
+## accel_belt_y          1.126214    1.18885870   FALSE FALSE
+## accel_belt_z          1.152263    2.42017663   FALSE FALSE
+## magnet_belt_x         1.008969    2.48811141   FALSE FALSE
+## magnet_belt_y         1.170270    2.36922554   FALSE FALSE
+## magnet_belt_z         1.093525    3.60903533   FALSE FALSE
+## roll_arm             45.488889   19.42085598   FALSE FALSE
+## pitch_arm            78.769231   22.66474185   FALSE FALSE
+## yaw_arm              31.492308   21.34001359   FALSE FALSE
+## total_accel_arm       1.038391    0.56046196   FALSE FALSE
+## gyros_arm_x           1.025806    5.28192935   FALSE FALSE
+## gyros_arm_y           1.585859    3.12500000   FALSE FALSE
+## gyros_arm_z           1.071875    1.96161685   FALSE FALSE
+## accel_arm_x           1.017857    6.50475543   FALSE FALSE
+## accel_arm_y           1.138462    4.40726902   FALSE FALSE
+## accel_arm_z           1.049383    6.41983696   FALSE FALSE
+## magnet_arm_x          1.018519   11.07336957   FALSE FALSE
+## magnet_arm_y          1.018868    7.26902174   FALSE FALSE
+## magnet_arm_z          1.013889   10.59782609   FALSE FALSE
+## roll_dumbbell         1.050633   87.74626359   FALSE FALSE
+## pitch_dumbbell        2.325301   85.52989130   FALSE FALSE
+## yaw_dumbbell          1.136986   87.32167120   FALSE FALSE
+## total_accel_dumbbell  1.097411    0.36514946   FALSE FALSE
+## gyros_dumbbell_x      1.007937    1.99558424   FALSE FALSE
+## gyros_dumbbell_y      1.268012    2.26732337   FALSE FALSE
+## gyros_dumbbell_z      1.025281    1.60495924   FALSE FALSE
+## accel_dumbbell_x      1.077320    3.42221467   FALSE FALSE
+## accel_dumbbell_y      1.088435    3.85529891   FALSE FALSE
+## accel_dumbbell_z      1.172414    3.39673913   FALSE FALSE
+## magnet_dumbbell_x     1.028846    8.80604620   FALSE FALSE
+## magnet_dumbbell_y     1.281553    6.92934783   FALSE FALSE
+## magnet_dumbbell_z     1.028302    5.58763587   FALSE FALSE
+## roll_forearm         11.043269   14.78430707   FALSE FALSE
+## pitch_forearm        62.027027   21.13620924   FALSE FALSE
+## yaw_forearm          14.711538   14.10495924   FALSE FALSE
+## total_accel_forearm   1.145288    0.57744565   FALSE FALSE
+## gyros_forearm_x       1.049689    2.38620924   FALSE FALSE
+## gyros_forearm_y       1.111111    6.05468750   FALSE FALSE
+## gyros_forearm_z       1.066225    2.38620924   FALSE FALSE
+## accel_forearm_x       1.230769    6.54721467   FALSE FALSE
+## accel_forearm_y       1.237288    8.18614130   FALSE FALSE
+## accel_forearm_z       1.089109    4.67051630   FALSE FALSE
+## magnet_forearm_x      1.021739   11.96501359   FALSE FALSE
+## magnet_forearm_y      1.372549   15.26834239   FALSE FALSE
+## magnet_forearm_z      1.000000   13.40013587   FALSE FALSE
 ## classe                1.469065    0.04245924   FALSE FALSE
 ```
 ### Random Decision Forest
@@ -177,19 +177,18 @@ print(modelFit)
 ##                      Number of trees: 500
 ## No. of variables tried at each split: 7
 ## 
-##         OOB estimate of  error rate: 0.74%
+##         OOB estimate of  error rate: 0.76%
 ## Confusion matrix:
-##      A    B    C    D    E  class.error
-## A 3345    3    0    0    0 0.0008960573
-## B   18 2256    5    0    0 0.0100921457
-## C    0   15 2034    5    0 0.0097370983
-## D    0    0   28 1900    2 0.0155440415
-## E    0    0    2    9 2154 0.0050808314
+##      A    B    C    D    E class.error
+## A 3344    3    0    0    1 0.001194743
+## B   17 2253    9    0    0 0.011408513
+## C    0   17 2030    7    0 0.011684518
+## D    0    0   26 1903    1 0.013989637
+## E    0    1    1    6 2157 0.003695150
 ```
 
 ```r
 dataModel <- rpart(classe ~ .,data=myTrainingNew,method="class")
-## dataPrediction <- predict(dataModel,myTest,type="class")
 rpart.plot(dataModel,main="Figure 1: Classification",extra=100,under=TRUE,faclen=0)
 ```
 
@@ -218,4 +217,84 @@ heat.tree(main="Figure 2: Heat Tree" ,treeModel,type=2,varlen=2,fallen.leaves=TR
 
 ```r
 ## Cross Validation
+# Prediction 1
+testPrediction <- predict(modelFit,myTest,type="class")
+confusionMatrix(testPrediction,myTest$classe)
+```
+
+```
+## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction    A    B    C    D    E
+##          A 2231    7    0    0    0
+##          B    1 1510    9    0    0
+##          C    0    1 1359   10    2
+##          D    0    0    0 1273    3
+##          E    0    0    0    3 1437
+## 
+## Overall Statistics
+##                                           
+##                Accuracy : 0.9954          
+##                  95% CI : (0.9937, 0.9968)
+##     No Information Rate : 0.2845          
+##     P-Value [Acc > NIR] : < 2.2e-16       
+##                                           
+##                   Kappa : 0.9942          
+##                                           
+##  Mcnemar's Test P-Value : NA              
+## 
+## Statistics by Class:
+## 
+##                      Class: A Class: B Class: C Class: D Class: E
+## Sensitivity            0.9996   0.9947   0.9934   0.9899   0.9965
+## Specificity            0.9988   0.9984   0.9980   0.9995   0.9995
+## Pos Pred Value         0.9969   0.9934   0.9905   0.9976   0.9979
+## Neg Pred Value         0.9998   0.9987   0.9986   0.9980   0.9992
+## Prevalence             0.2845   0.1935   0.1744   0.1639   0.1838
+## Detection Rate         0.2843   0.1925   0.1732   0.1622   0.1832
+## Detection Prevalence   0.2852   0.1937   0.1749   0.1626   0.1835
+## Balanced Accuracy      0.9992   0.9966   0.9957   0.9947   0.9980
+```
+
+```r
+# Prediction 2
+modelFit2 <- randomForest(classe ~. ,data=myTrainingNew,method="class")
+testPrediction2 <- predict(dataModel,myTest,type="class")
+confusionMatrix(testPrediction2,myTest$classe)
+```
+
+```
+## Confusion Matrix and Statistics
+## 
+##           Reference
+## Prediction    A    B    C    D    E
+##          A 2051  304   24  104   38
+##          B   50  892  108   65   96
+##          C   66  174 1123  119  146
+##          D   40   88   92  850   84
+##          E   25   60   21  148 1078
+## 
+## Overall Statistics
+##                                           
+##                Accuracy : 0.764           
+##                  95% CI : (0.7544, 0.7733)
+##     No Information Rate : 0.2845          
+##     P-Value [Acc > NIR] : < 2.2e-16       
+##                                           
+##                   Kappa : 0.7002          
+##                                           
+##  Mcnemar's Test P-Value : < 2.2e-16       
+## 
+## Statistics by Class:
+## 
+##                      Class: A Class: B Class: C Class: D Class: E
+## Sensitivity            0.9189   0.5876   0.8209   0.6610   0.7476
+## Specificity            0.9163   0.9496   0.9220   0.9537   0.9603
+## Pos Pred Value         0.8136   0.7366   0.6898   0.7366   0.8093
+## Neg Pred Value         0.9660   0.9057   0.9606   0.9348   0.9441
+## Prevalence             0.2845   0.1935   0.1744   0.1639   0.1838
+## Detection Rate         0.2614   0.1137   0.1431   0.1083   0.1374
+## Detection Prevalence   0.3213   0.1543   0.2075   0.1471   0.1698
+## Balanced Accuracy      0.9176   0.7686   0.8715   0.8073   0.8540
 ```
