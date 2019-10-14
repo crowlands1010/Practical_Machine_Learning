@@ -123,4 +123,8 @@ confusionMatrix(testPrediction,myTest$classe)
 modelFit2 <- randomForest(classe ~. ,data=myTrainingNew,method="class")
 testPrediction2 <- predict(dataModel,myTest,type="class")
 confusionMatrix(testPrediction2,myTest$classe)
+
+# Final Prediction
+finalPrediction <- predict(modelFit2,myTest,type="class")
+finalPrediction
 ```
