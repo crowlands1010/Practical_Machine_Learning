@@ -91,36 +91,28 @@ nearZero
 ## Random Forest
 set.seed(123)
 modelFit <- randomForest(classe~.,data=myTrainingNew)
-print(modelFit)
+
+plot(modelFit)
+print(modelFit,main="Figure 1: Model Fitting #1")
 ```
 ```{r dataVisualization}
 dataModel <- rpart(classe ~ .,data=myTrainingNew,method="class")
-rpart.plot(dataModel,main="Figure 1: Classification",extra=100,under=TRUE,faclen=0)
-
-heat.tree <- function(tree, low.is.green = FALSE, ...) 
-  { 
-    # dots args passed to prp
-    y <- tree$frame$yval
-    if(low.is.green)
-      y <- -y
-    max <- max(y)
-    min <- min(y)
-    cols <- rainbow(99, end = .36)[
-            ifelse(y > y[1], (y-y[1]) * (99-50) / (max-y[1]) + 50,
-                  (y-min) * (50-1) / (y[1]-min) + 1)]
-    prp(tree, branch.col = cols, box.col = cols, ...)
-  }
-
-treeModel <- rpart(classe ~ ., data=myTrainingNew,method="anova")
-heat.tree(main="Figure 2: Heat Tree" ,treeModel,type=2,varlen=2,fallen.leaves=TRUE)
 
 ## Cross Validation
 # Prediction 1
 testPrediction <- predict(modelFit,myTest,type="class")
+plot(testPrediction,main="Figure 2: Test Prediction #1")
+
 confusionMatrix(testPrediction,myTest$classe)
+
 
 # Prediction 2
 modelFit2 <- randomForest(classe ~. ,data=myTrainingNew,method="class")
+plot(modelFit2,main="Figure 3: Model Fitting #2")
+
 testPrediction2 <- predict(dataModel,myTest,type="class")
+plot(testPrediction2,main="Figure 4: Test Prediction #2")
+
 confusionMatrix(testPrediction2,myTest$classe)
+
 ```
